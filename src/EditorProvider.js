@@ -1,12 +1,14 @@
-import React from 'react';
 import PropTypes from 'prop-types';
+import React from 'react';
 
 const propTypes = {
 	view: PropTypes.object,
 	editorState: PropTypes.object,
 	transaction: PropTypes.object,
 	containerId: PropTypes.string,
-	children: PropTypes.node
+	children: PropTypes.node,
+	pluginKeys: PropTypes.object,
+	getPlugin: PropTypes.func,
 };
 
 const defaultProps = {
@@ -15,6 +17,8 @@ const defaultProps = {
 	transaction: undefined,
 	containerId: undefined,
 	children: undefined,
+	pluginKeys: undefined,
+	getPlugin: undefined,
 };
 
 const EditorProvider = function(props) {

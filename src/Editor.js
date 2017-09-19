@@ -1,15 +1,11 @@
+import { EditorState, PluginKey } from 'prosemirror-state';
 import React, { Component } from 'react';
-import PropTypes from 'prop-types';
-import { EditorState } from 'prosemirror-state';
-import { EditorView } from 'prosemirror-view';
 
 import EditorProvider from './EditorProvider';
-// import { configureClipboard } from './schema/setup/clipboard';
-// import configureNodeViews from '../schema/editable/configure';
-// import { createRichMention } from '../addons/Autocomplete/autocompleteConfig';
+import { EditorView } from 'prosemirror-view';
+import PropTypes from 'prop-types';
 import { createSchema } from './schema';
 import { getBasePlugins } from './schema/setup';
-// import { getPlugin } from '../schema/plugins';
 
 const propTypes = {
 	initialContent: PropTypes.object,
@@ -29,7 +25,7 @@ class Editor extends Component {
 		this.state = {};
 		// this.onChange = this.onChange.bind(this);
 		this.getJSON = this.getJSON.bind(this);
-		// this.configurePlugins = this.configurePlugins.bind(this);
+		this.configurePlugins = this.configurePlugins.bind(this);
 		this.createEditor = this.createEditor.bind(this);
 		// this.updateMentions = this.updateMentions.bind(this);
 		// this.onMentionSelection = this.onMentionSelection.bind(this);
@@ -52,22 +48,39 @@ class Editor extends Component {
 	// }
 
 	getJSON() {
-		return this.view.state.doc.toJSON();
+		return this.state.editorState.doc.toJSON();
+	}
+
+	getPlugin(key) {
+		if (this.state.pluginKeys[key]) {
+			return this.state.pluginKeys[key].get(this.editorState);
+		}
+		return null;
 	}
 
 	configurePlugins() {
 		const schema = createSchema();
 
+		const pluginKeys = {};
+
 		let plugins = getBasePlugins({ schema });
-		if (this.props.children && this.props.children.length > 0) {
-			for (const child of this.props.children) {
+
+		if (this.props.children) {
+			React.Children.forEach(this.props.children, (child) => {
 				if (child.type.getPlugins) {
-					plugins = plugins.concat(child.type.getPlugins(child.props));
+					const key = new PluginKey(child.type.displayName);
+					pluginKeys[child.type.displayName] = key;
+					const addonPlugins = child.type.getPlugins({
+						...child.props,
+						key,
+						getPlugin: this.getPlugin
+					});
+					plugins = plugins.concat(addonPlugins);
 				}
-			}
+			});
 		}
 
-		return plugins;
+		return { plugins, pluginKeys };
 	}
 
 	createEditor() {
@@ -80,7 +93,7 @@ class Editor extends Component {
 		// const place = ReactDOM.findDOMNode(this.refs.container);
 
 		const contents = this.props.initialContent;
-		const plugins = this.configurePlugins();
+		const { plugins, pluginKeys } = this.configurePlugins();
 
 		const stateConfig = {
 			doc: (contents) ? schema.nodeFromJSON(contents) : schema.nodes.doc.create(),
@@ -124,7 +137,7 @@ class Editor extends Component {
 			// ...props
 		});
 
-		this.setState({ view: this.view, editorState: state });
+		this.setState({ view: this.view, editorState: state, pluginKeys });
 	}
 
 	// updateMentions(mentionInput) {
