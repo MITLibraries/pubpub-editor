@@ -89,6 +89,56 @@
                         "comment": "/**\n * @component\n *\n * The main Editor component, by itself it acts largely as plain textEditor. Nesting plugins enables greater functionality.\n *\n * @example\n * return <Editor placeholder=\"Please start typing\"/>\n * @prop {object} initialContent A JSON document representing the initial content. This JSON should be of the form that comes from the 'toJSON' function\n * @prop {func} onChange Fired whenever the document is changed.\n * @prop {String} placeholder A placeholder string that will appear if there is no content.\n * @prop {bool} isReadOnly Set to true to disallow editing, both in text and modifying or inserting add ons.\n\n */"
                     }
                 ]
+            },
+            {
+                "comment": "/**\n * @module Addons\n */",
+                "meta": {
+                    "filename": "FormattingMenu.js",
+                    "lineno": 43,
+                    "columnno": 0,
+                    "path": "/Users/thariqshihipar/Projects/pubpub-editor/src/addons/FormattingMenu",
+                    "code": {}
+                },
+                "kind": "module",
+                "name": "Addons",
+                "longname": "module:Addons",
+                "___id": "T000002R000754",
+                "___s": true,
+                "doclets": [
+                    {
+                        "meta": {
+                            "range": [
+                                2587,
+                                6494
+                            ],
+                            "filename": "FormattingMenu.js",
+                            "lineno": 58,
+                            "columnno": 4,
+                            "path": "/Users/thariqshihipar/Projects/pubpub-editor/src/addons/FormattingMenu",
+                            "code": {
+                                "id": "astnode100006417",
+                                "name": "FormattingMenu",
+                                "type": "CallExpression",
+                                "value": ""
+                            }
+                        },
+                        "params": [],
+                        "longname": "module:Addons~FormattingMenu",
+                        "examples": [
+                            "return <Editor placeholder=\"Please start typing\">\n \t\t<FormattingMenu/>\n\t</Editor>"
+                        ],
+                        "name": "FormattingMenu",
+                        "doclets": [],
+                        "memberof": "module:Addons",
+                        "scope": "inner",
+                        "kind": "component",
+                        "___s": true,
+                        "___id": "T000002R000755",
+                        "description": "Displays a formatting menu for inline operation such as bold, italics, etc. when a user selects some text.\nThe options are not currently configurable by other add-ons in the way that the InsertMenu addon is.",
+                        "parentKind": "module",
+                        "comment": "/**\n * @component\n *\n * Displays a formatting menu for inline operation such as bold, italics, etc. when a user selects some text.\n * The options are not currently configurable by other add-ons in the way that the InsertMenu addon is.\n * @example\n * return <Editor placeholder=\"Please start typing\">\n \t\t<FormattingMenu/>\n\t</Editor>\n */"
+                    }
+                ]
             }
         ]
     }
