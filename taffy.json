@@ -591,37 +591,10 @@
         "comment": "/**\n * React Element\n * @typedef ReactElement\n * @noexpand\n * @see https://facebook.github.io/react/docs/react-component.html\n */"
     },
     {
-        "meta": {
-            "range": [
-                2485,
-                2527
-            ],
-            "filename": "Editor.js",
-            "lineno": 45,
-            "columnno": 1,
-            "path": "/Users/thariqshihipar/Projects/pubpub-editor/src",
-            "code": {
-                "id": "astnode100000301",
-                "name": "initialContent",
-                "type": "MemberExpression",
-                "value": "_propTypes2.default.object"
-            }
-        },
-        "longname": "propTypes.initialContent",
-        "name": "initialContent",
-        "memberof": "propTypes",
-        "scope": "static",
-        "kind": "member",
-        "___s": true,
-        "___id": "T000002R000053",
-        "description": "Set to true to disable the button, and `onClick` calls will no longer be called when clicked.",
-        "comment": "/** Set to true to disable the button, and `onClick` calls will no longer be called when clicked. */"
-    },
-    {
         "comment": "/**\n * @module Components\n */",
         "meta": {
             "filename": "Editor.js",
-            "lineno": 60,
+            "lineno": 59,
             "columnno": 0,
             "path": "/Users/thariqshihipar/Projects/pubpub-editor/src",
             "code": {}
@@ -635,11 +608,11 @@
     {
         "meta": {
             "range": [
-                3139,
-                11999
+                3400,
+                12316
             ],
             "filename": "Editor.js",
-            "lineno": 76,
+            "lineno": 77,
             "columnno": 4,
             "path": "/Users/thariqshihipar/Projects/pubpub-editor/src",
             "code": {
@@ -652,7 +625,7 @@
         "params": [],
         "longname": "module:Components~Editor",
         "examples": [
-            "return <Button>Button text</Button>"
+            "return <Editor placeholder=\"Please start typing\"/>"
         ],
         "name": "Editor",
         "memberof": "module:Components",
@@ -663,27 +636,43 @@
                         "object"
                     ]
                 },
-                "description": "An prop",
-                "name": "shout"
+                "description": "A JSON document representing the initial content. This JSON should be of the form that comes from the 'toJSON' function",
+                "name": "initialContent"
             },
             {
                 "type": {
                     "names": [
-                        "Array.<string>"
+                        "func"
                     ]
                 },
-                "optional": true,
-                "defaultvalue": "[]",
-                "description": "An array of names of people to yell at",
-                "name": "yellees"
+                "description": "Fired whenever the document is changed.",
+                "name": "onChange"
+            },
+            {
+                "type": {
+                    "names": [
+                        "String"
+                    ]
+                },
+                "description": "A placeholder string that will appear if there is no content.",
+                "name": "placeholder"
+            },
+            {
+                "type": {
+                    "names": [
+                        "bool"
+                    ]
+                },
+                "description": "Set to true to disallow editing, both in text and modifying or inserting add ons.",
+                "name": "isReadOnly"
             }
         ],
         "scope": "inner",
         "kind": "component",
         "___s": true,
         "___id": "T000002R000065",
-        "description": "`Editor` is a simple component that displays a button.\nIt does not keep state.",
-        "comment": "/**\n * @component\n *\n * `Editor` is a simple component that displays a button.\n * It does not keep state.\n *\n * @example\n * return <Button>Button text</Button>\n * @prop {object} shout An prop\n * @prop {Array<string>} [yellees = []] An array of names of people to yell at\n */"
+        "description": "The main Editor component, by itself it acts largely as plain textEditor. Nesting plugins enables greater functionality.",
+        "comment": "/**\n * @component\n *\n * The main Editor component, by itself it acts largely as plain textEditor. Nesting plugins enables greater functionality.\n *\n * @example\n * return <Editor placeholder=\"Please start typing\"/>\n * @prop {object} initialContent A JSON document representing the initial content. This JSON should be of the form that comes from the 'toJSON' function\n * @prop {func} onChange Fired whenever the document is changed.\n * @prop {String} placeholder A placeholder string that will appear if there is no content.\n * @prop {bool} isReadOnly Set to true to disallow editing, both in text and modifying or inserting add ons.\n\n */"
     },
     {
         "kind": "package",
