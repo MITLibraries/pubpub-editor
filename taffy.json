@@ -1,0 +1,721 @@
+[
+    {
+        "meta": {
+            "filename": "JsdocTypes.js",
+            "lineno": 1,
+            "columnno": 0,
+            "path": "/Users/thariqshihipar/Projects/pubpub-editor/docs",
+            "code": {}
+        },
+        "longname": "ClassName",
+        "name": "ClassName",
+        "scope": "global",
+        "kind": "typedef",
+        "___s": true,
+        "___id": "T000002R000002",
+        "type": {
+            "names": [
+                "string"
+            ]
+        },
+        "description": "HTML class names to be added to the rendered component.",
+        "comment": "/**\n * HTML class names to be added to the rendered component.\n *\n * @typedef {string} ClassName\n */"
+    },
+    {
+        "meta": {
+            "filename": "JsdocTypes.js",
+            "lineno": 7,
+            "columnno": 0,
+            "path": "/Users/thariqshihipar/Projects/pubpub-editor/docs",
+            "code": {}
+        },
+        "longname": "HtmlProps",
+        "name": "HtmlProps",
+        "scope": "global",
+        "kind": "typedef",
+        "___s": true,
+        "___id": "T000002R000003",
+        "type": {
+            "names": [
+                "Object"
+            ]
+        },
+        "description": "An object of attributes to be applied to the outer-most HTML tag of the component.",
+        "comment": "/**\n * An object of attributes to be applied to the outer-most HTML tag of the component.\n *\n * @typedef {Object} HtmlProps\n */"
+    },
+    {
+        "meta": {
+            "filename": "JsdocTypes.js",
+            "lineno": 13,
+            "columnno": 0,
+            "path": "/Users/thariqshihipar/Projects/pubpub-editor/docs",
+            "code": {}
+        },
+        "longname": "SpruceModifier",
+        "name": "SpruceModifier",
+        "scope": "global",
+        "kind": "typedef",
+        "___s": true,
+        "___id": "T000002R000004",
+        "type": {
+            "names": [
+                "string",
+                "Object.<string, boolean>"
+            ]
+        },
+        "description": "Spruce modifiers. Pass a string to add modifiers (space-separated if multiple)\nor if you provide an object then only the names of the object's keys that evaluate to true will be added as modifiers.",
+        "comment": "/**\n * Spruce modifiers. Pass a string to add modifiers (space-separated if multiple)\n * or if you provide an object then only the names of the object's keys that evaluate to true will be added as modifiers.\n *\n * @typedef {(string|Object<string,boolean>)} SpruceModifier\n */"
+    },
+    {
+        "meta": {
+            "filename": "JsdocTypes.js",
+            "lineno": 20,
+            "columnno": 0,
+            "path": "/Users/thariqshihipar/Projects/pubpub-editor/docs",
+            "code": {}
+        },
+        "longname": "SprucePeer",
+        "name": "SprucePeer",
+        "scope": "global",
+        "kind": "typedef",
+        "___s": true,
+        "___id": "T000002R000005",
+        "type": {
+            "names": [
+                "string",
+                "Object.<string, boolean>"
+            ]
+        },
+        "description": "Spruce peer modifiers. Pass a string to add modifiers (space-separated if multiple)\nor if you provide an object then only the names of the object's keys that evaluate to true will be added as modifiers.",
+        "comment": "/**\n * Spruce peer modifiers. Pass a string to add modifiers (space-separated if multiple)\n * or if you provide an object then only the names of the object's keys that evaluate to true will be added as modifiers.\n *\n * @typedef {(string|Object<string,boolean>)} SprucePeer\n */"
+    },
+    {
+        "meta": {
+            "filename": "JsdocTypes.js",
+            "lineno": 27,
+            "columnno": 0,
+            "path": "/Users/thariqshihipar/Projects/pubpub-editor/docs",
+            "code": {}
+        },
+        "params": [
+            {
+                "type": {
+                    "names": [
+                        "string"
+                    ]
+                },
+                "description": "The input's new value.",
+                "name": "newValue"
+            },
+            {
+                "type": {
+                    "names": [
+                        "OnChangeMeta"
+                    ]
+                },
+                "name": "meta"
+            }
+        ],
+        "longname": "OnChange",
+        "name": "OnChange",
+        "scope": "global",
+        "kind": "typedef",
+        "___s": true,
+        "___id": "T000002R000006",
+        "type": {
+            "names": [
+                "function"
+            ]
+        },
+        "description": "A callback that is called by input components to notify parents of changes in their values.",
+        "comment": "/**\n * A callback that is called by input components to notify parents of changes in their values.\n *\n * @callback OnChange\n * @param {string} newValue The input's new value.\n * @param {OnChangeMeta} meta\n */"
+    },
+    {
+        "meta": {
+            "filename": "JsdocTypes.js",
+            "lineno": 35,
+            "columnno": 0,
+            "path": "/Users/thariqshihipar/Projects/pubpub-editor/docs",
+            "code": {}
+        },
+        "params": [
+            {
+                "type": {
+                    "names": [
+                        "boolean"
+                    ]
+                },
+                "description": "The input's new value.",
+                "name": "newValue"
+            },
+            {
+                "type": {
+                    "names": [
+                        "OnChangeMeta"
+                    ]
+                },
+                "name": "meta"
+            }
+        ],
+        "longname": "OnChangeBoolean",
+        "name": "OnChangeBoolean",
+        "scope": "global",
+        "kind": "typedef",
+        "___s": true,
+        "___id": "T000002R000007",
+        "type": {
+            "names": [
+                "function"
+            ]
+        },
+        "description": "A callback that is called by input components to notify parents of changes in their values.",
+        "comment": "/**\n * A callback that is called by input components to notify parents of changes in their values.\n *\n * @callback OnChangeBoolean\n * @param {boolean} newValue The input's new value.\n * @param {OnChangeMeta} meta\n */"
+    },
+    {
+        "meta": {
+            "filename": "JsdocTypes.js",
+            "lineno": 43,
+            "columnno": 0,
+            "path": "/Users/thariqshihipar/Projects/pubpub-editor/docs",
+            "code": {}
+        },
+        "longname": "OnChangeMeta",
+        "name": "OnChangeMeta",
+        "properties": [
+            {
+                "type": {
+                    "names": [
+                        "Object"
+                    ]
+                },
+                "description": "The event that triggered the change",
+                "name": "event"
+            },
+            {
+                "type": {
+                    "names": [
+                        "Object"
+                    ]
+                },
+                "description": "The HTML element that triggered the change",
+                "name": "element"
+            }
+        ],
+        "scope": "global",
+        "kind": "typedef",
+        "___s": true,
+        "___id": "T000002R000008",
+        "description": "Meta information about the change",
+        "comment": "/**\n * Meta information about the change\n *\n * @typedef OnChangeMeta\n * @property {Object} event The event that triggered the change\n * @property {Object} element The HTML element that triggered the change\n */"
+    },
+    {
+        "meta": {
+            "filename": "JsdocTypes.js",
+            "lineno": 51,
+            "columnno": 0,
+            "path": "/Users/thariqshihipar/Projects/pubpub-editor/docs",
+            "code": {}
+        },
+        "params": [
+            {
+                "type": {
+                    "names": [
+                        "Array.<(string|boolean)>"
+                    ]
+                },
+                "description": "The input's new value.",
+                "name": "newValue"
+            },
+            {
+                "type": {
+                    "names": [
+                        "OnChangeMeta"
+                    ]
+                },
+                "name": "meta"
+            }
+        ],
+        "longname": "OnChangeMulti",
+        "name": "OnChangeMulti",
+        "scope": "global",
+        "kind": "typedef",
+        "___s": true,
+        "___id": "T000002R000009",
+        "type": {
+            "names": [
+                "function"
+            ]
+        },
+        "description": "A callback that is called by input components to notify parents of changes in their values.",
+        "comment": "/**\n * A callback that is called by input components to notify parents of changes in their values.\n *\n * @callback OnChangeMulti\n * @param {Array<string|boolean>} newValue The input's new value.\n * @param {OnChangeMeta} meta\n */"
+    },
+    {
+        "meta": {
+            "filename": "JsdocTypes.js",
+            "lineno": 59,
+            "columnno": 0,
+            "path": "/Users/thariqshihipar/Projects/pubpub-editor/docs",
+            "code": {}
+        },
+        "params": [
+            {
+                "type": {
+                    "names": [
+                        "function"
+                    ]
+                },
+                "description": "The element's HTML click event.",
+                "name": "event"
+            }
+        ],
+        "longname": "OnClick",
+        "name": "OnClick",
+        "scope": "global",
+        "kind": "typedef",
+        "___s": true,
+        "___id": "T000002R000010",
+        "type": {
+            "names": [
+                "function"
+            ]
+        },
+        "description": "A callback that is called by input component to notify parents of changes to their values.",
+        "comment": "/**\n * A callback that is called by input component to notify parents of changes to their values.\n *\n * @callback OnClick\n * @param {Function} event The element's HTML click event.\n */"
+    },
+    {
+        "meta": {
+            "filename": "JsdocTypes.js",
+            "lineno": 66,
+            "columnno": 0,
+            "path": "/Users/thariqshihipar/Projects/pubpub-editor/docs",
+            "code": {}
+        },
+        "longname": "SpruceName",
+        "name": "SpruceName",
+        "scope": "global",
+        "kind": "typedef",
+        "___s": true,
+        "___id": "T000002R000011",
+        "type": {
+            "names": [
+                "string"
+            ]
+        },
+        "description": "The base class name to use with the Spruce naming convention for this component.",
+        "comment": "/**\n * The base class name to use with the Spruce naming convention for this component.\n *\n * @typedef {string} SpruceName\n */"
+    },
+    {
+        "returns": [
+            {
+                "type": {
+                    "names": [
+                        "Object"
+                    ]
+                }
+            }
+        ],
+        "meta": {
+            "filename": "JsdocTypes.js",
+            "lineno": 72,
+            "columnno": 0,
+            "path": "/Users/thariqshihipar/Projects/pubpub-editor/docs",
+            "code": {}
+        },
+        "params": [
+            {
+                "type": {
+                    "names": [
+                        "Object"
+                    ]
+                },
+                "description": "The current props.",
+                "name": "props"
+            }
+        ],
+        "longname": "HockConfig",
+        "name": "HockConfig",
+        "scope": "global",
+        "kind": "typedef",
+        "___s": true,
+        "___id": "T000002R000012",
+        "type": {
+            "names": [
+                "function"
+            ]
+        },
+        "description": "A function to configure hocks.",
+        "comment": "/**\n * A function to configure hocks.\n *\n * @callback HockConfig\n * @param {Object} props The current props.\n * @returns {Object}\n */"
+    },
+    {
+        "meta": {
+            "filename": "JsdocTypes.js",
+            "lineno": 80,
+            "columnno": 0,
+            "path": "/Users/thariqshihipar/Projects/pubpub-editor/docs",
+            "code": {}
+        },
+        "params": [
+            {
+                "type": {
+                    "names": [
+                        "ReactComponent"
+                    ]
+                },
+                "description": "The component to wrap in this hock.",
+                "name": "Component"
+            }
+        ],
+        "longname": "HockApplier",
+        "name": "HockApplier",
+        "scope": "global",
+        "kind": "typedef",
+        "___s": true,
+        "___id": "T000002R000013",
+        "type": {
+            "names": [
+                "function"
+            ]
+        },
+        "comment": "/**\n * @callback HockApplier\n *\n * @param {ReactComponent} Component\n * The component to wrap in this hock.\n */"
+    },
+    {
+        "meta": {
+            "filename": "JsdocTypes.js",
+            "lineno": 87,
+            "columnno": 0,
+            "path": "/Users/thariqshihipar/Projects/pubpub-editor/docs",
+            "code": {}
+        },
+        "longname": "ValueChangePair",
+        "name": "ValueChangePair",
+        "scope": "global",
+        "kind": "typedef",
+        "___s": true,
+        "___id": "T000002R000014",
+        "type": {
+            "names": [
+                "Array.<string>",
+                "List.<string>"
+            ]
+        },
+        "description": "Use with pipes, the value/change pair specify the names of\nmatching value and onChange function, to receive and modify a value.\nThey should always have exactly 2 elements.",
+        "comment": "/**\n * @typedef {Array<string>|List<string>} ValueChangePair\n * Use with pipes, the value/change pair specify the names of\n * matching value and onChange function, to receive and modify a value.\n * They should always have exactly 2 elements.\n */"
+    },
+    {
+        "meta": {
+            "filename": "JsdocTypes.js",
+            "lineno": 96,
+            "columnno": 0,
+            "path": "/Users/thariqshihipar/Projects/pubpub-editor/docs",
+            "code": {}
+        },
+        "longname": "Iterable",
+        "name": "Iterable",
+        "see": [
+            "https://facebook.github.io/immutable-js/docs/#/Iterable"
+        ],
+        "scope": "global",
+        "kind": "typedef",
+        "___s": true,
+        "tags": [
+            {
+                "originalTitle": "noexpand",
+                "title": "noexpand",
+                "text": ""
+            }
+        ],
+        "___id": "T000002R000015",
+        "description": "Immutable.js Iterable",
+        "comment": "/**\n * Immutable.js Iterable\n * @typedef Iterable\n * @noexpand\n * @see https://facebook.github.io/immutable-js/docs/#/Iterable\n */"
+    },
+    {
+        "meta": {
+            "filename": "JsdocTypes.js",
+            "lineno": 103,
+            "columnno": 0,
+            "path": "/Users/thariqshihipar/Projects/pubpub-editor/docs",
+            "code": {}
+        },
+        "longname": "List",
+        "name": "List",
+        "see": [
+            "https://facebook.github.io/immutable-js/docs/#/List"
+        ],
+        "scope": "global",
+        "kind": "typedef",
+        "___s": true,
+        "tags": [
+            {
+                "originalTitle": "noexpand",
+                "title": "noexpand",
+                "text": ""
+            }
+        ],
+        "___id": "T000002R000016",
+        "description": "Immutable.js List",
+        "comment": "/**\n * Immutable.js List\n * @typedef List\n * @noexpand\n * @see https://facebook.github.io/immutable-js/docs/#/List\n */"
+    },
+    {
+        "meta": {
+            "filename": "JsdocTypes.js",
+            "lineno": 110,
+            "columnno": 0,
+            "path": "/Users/thariqshihipar/Projects/pubpub-editor/docs",
+            "code": {}
+        },
+        "longname": "Map",
+        "name": "Map",
+        "see": [
+            "https://facebook.github.io/immutable-js/docs/#/Map"
+        ],
+        "scope": "global",
+        "kind": "typedef",
+        "___s": true,
+        "tags": [
+            {
+                "originalTitle": "noexpand",
+                "title": "noexpand",
+                "text": ""
+            }
+        ],
+        "___id": "T000002R000017",
+        "description": "Immutable.js Map",
+        "comment": "/**\n * Immutable.js Map\n * @typedef Map\n * @noexpand\n * @see https://facebook.github.io/immutable-js/docs/#/Map\n */"
+    },
+    {
+        "meta": {
+            "filename": "JsdocTypes.js",
+            "lineno": 117,
+            "columnno": 0,
+            "path": "/Users/thariqshihipar/Projects/pubpub-editor/docs",
+            "code": {}
+        },
+        "longname": "OrderedMap",
+        "name": "OrderedMap",
+        "see": [
+            "https://facebook.github.io/immutable-js/docs/#/OrderedMap"
+        ],
+        "scope": "global",
+        "kind": "typedef",
+        "___s": true,
+        "tags": [
+            {
+                "originalTitle": "noexpand",
+                "title": "noexpand",
+                "text": ""
+            }
+        ],
+        "___id": "T000002R000018",
+        "description": "Immutable.js OrderedMap",
+        "comment": "/**\n * Immutable.js OrderedMap\n * @typedef OrderedMap\n * @noexpand\n * @see https://facebook.github.io/immutable-js/docs/#/OrderedMap\n */"
+    },
+    {
+        "meta": {
+            "filename": "JsdocTypes.js",
+            "lineno": 124,
+            "columnno": 0,
+            "path": "/Users/thariqshihipar/Projects/pubpub-editor/docs",
+            "code": {}
+        },
+        "longname": "Record",
+        "name": "Record",
+        "see": [
+            "https://facebook.github.io/immutable-js/docs/#/Record"
+        ],
+        "scope": "global",
+        "kind": "typedef",
+        "___s": true,
+        "tags": [
+            {
+                "originalTitle": "noexpand",
+                "title": "noexpand",
+                "text": ""
+            }
+        ],
+        "___id": "T000002R000019",
+        "description": "Immutable.js Record",
+        "comment": "/**\n * Immutable.js Record\n * @typedef Record\n * @noexpand\n * @see https://facebook.github.io/immutable-js/docs/#/Record\n */"
+    },
+    {
+        "meta": {
+            "filename": "JsdocTypes.js",
+            "lineno": 131,
+            "columnno": 0,
+            "path": "/Users/thariqshihipar/Projects/pubpub-editor/docs",
+            "code": {}
+        },
+        "longname": "ReactComponent",
+        "name": "ReactComponent",
+        "see": [
+            "https://facebook.github.io/react/docs/react-component.html"
+        ],
+        "scope": "global",
+        "kind": "typedef",
+        "___s": true,
+        "tags": [
+            {
+                "originalTitle": "noexpand",
+                "title": "noexpand",
+                "text": ""
+            }
+        ],
+        "___id": "T000002R000020",
+        "description": "React Component",
+        "comment": "/**\n * React Component\n * @typedef ReactComponent\n * @noexpand\n * @see https://facebook.github.io/react/docs/react-component.html\n */"
+    },
+    {
+        "meta": {
+            "filename": "JsdocTypes.js",
+            "lineno": 138,
+            "columnno": 0,
+            "path": "/Users/thariqshihipar/Projects/pubpub-editor/docs",
+            "code": {}
+        },
+        "longname": "ReactElement",
+        "name": "ReactElement",
+        "see": [
+            "https://facebook.github.io/react/docs/react-component.html"
+        ],
+        "scope": "global",
+        "kind": "typedef",
+        "___s": true,
+        "tags": [
+            {
+                "originalTitle": "noexpand",
+                "title": "noexpand",
+                "text": ""
+            }
+        ],
+        "___id": "T000002R000021",
+        "description": "React Element",
+        "comment": "/**\n * React Element\n * @typedef ReactElement\n * @noexpand\n * @see https://facebook.github.io/react/docs/react-component.html\n */"
+    },
+    {
+        "meta": {
+            "range": [
+                2485,
+                2527
+            ],
+            "filename": "Editor.js",
+            "lineno": 45,
+            "columnno": 1,
+            "path": "/Users/thariqshihipar/Projects/pubpub-editor/src",
+            "code": {
+                "id": "astnode100000301",
+                "name": "initialContent",
+                "type": "MemberExpression",
+                "value": "_propTypes2.default.object"
+            }
+        },
+        "longname": "propTypes.initialContent",
+        "name": "initialContent",
+        "memberof": "propTypes",
+        "scope": "static",
+        "kind": "member",
+        "___s": true,
+        "___id": "T000002R000053",
+        "description": "Set to true to disable the button, and `onClick` calls will no longer be called when clicked.",
+        "comment": "/** Set to true to disable the button, and `onClick` calls will no longer be called when clicked. */"
+    },
+    {
+        "comment": "/**\n * @module Components\n */",
+        "meta": {
+            "filename": "Editor.js",
+            "lineno": 60,
+            "columnno": 0,
+            "path": "/Users/thariqshihipar/Projects/pubpub-editor/src",
+            "code": {}
+        },
+        "kind": "module",
+        "name": "Components",
+        "longname": "module:Components",
+        "___id": "T000002R000064",
+        "___s": true
+    },
+    {
+        "meta": {
+            "range": [
+                3139,
+                11999
+            ],
+            "filename": "Editor.js",
+            "lineno": 76,
+            "columnno": 4,
+            "path": "/Users/thariqshihipar/Projects/pubpub-editor/src",
+            "code": {
+                "id": "astnode100000346",
+                "name": "Editor",
+                "type": "CallExpression",
+                "value": ""
+            }
+        },
+        "params": [],
+        "longname": "module:Components~Editor",
+        "examples": [
+            "return <Button>Button text</Button>"
+        ],
+        "name": "Editor",
+        "memberof": "module:Components",
+        "properties": [
+            {
+                "type": {
+                    "names": [
+                        "object"
+                    ]
+                },
+                "description": "An prop",
+                "name": "shout"
+            },
+            {
+                "type": {
+                    "names": [
+                        "Array.<string>"
+                    ]
+                },
+                "optional": true,
+                "defaultvalue": "[]",
+                "description": "An array of names of people to yell at",
+                "name": "yellees"
+            }
+        ],
+        "scope": "inner",
+        "kind": "component",
+        "___s": true,
+        "___id": "T000002R000065",
+        "description": "`Editor` is a simple component that displays a button.\nIt does not keep state.",
+        "comment": "/**\n * @component\n *\n * `Editor` is a simple component that displays a button.\n * It does not keep state.\n *\n * @example\n * return <Button>Button text</Button>\n * @prop {object} shout An prop\n * @prop {Array<string>} [yellees = []] An array of names of people to yell at\n */"
+    },
+    {
+        "kind": "package",
+        "longname": "package:undefined",
+        "files": [
+            "/Users/thariqshihipar/Projects/pubpub-editor/docs/JsdocTypes.js",
+            "/Users/thariqshihipar/Projects/pubpub-editor/src/Editor.js",
+            "/Users/thariqshihipar/Projects/pubpub-editor/src/addons/Collaborative/Collaborative.js",
+            "/Users/thariqshihipar/Projects/pubpub-editor/src/addons/Collaborative/firebasePlugin.js",
+            "/Users/thariqshihipar/Projects/pubpub-editor/src/addons/FormattingMenu/FormattingMenu.js",
+            "/Users/thariqshihipar/Projects/pubpub-editor/src/addons/FormattingMenu/formattingMenuConfig.js",
+            "/Users/thariqshihipar/Projects/pubpub-editor/src/addons/Image/ImageAddon.js",
+            "/Users/thariqshihipar/Projects/pubpub-editor/src/addons/Image/ImageEditable.js",
+            "/Users/thariqshihipar/Projects/pubpub-editor/src/addons/Image/ImageFileUploader.js",
+            "/Users/thariqshihipar/Projects/pubpub-editor/src/addons/Image/ImageMenu.js",
+            "/Users/thariqshihipar/Projects/pubpub-editor/src/addons/Image/ImageStatic.js",
+            "/Users/thariqshihipar/Projects/pubpub-editor/src/addons/InsertMenu/InsertMenu.js",
+            "/Users/thariqshihipar/Projects/pubpub-editor/src/addons/InsertMenu/insertMenuConfig.js",
+            "/Users/thariqshihipar/Projects/pubpub-editor/src/addons/Latex/LatexAddon.js",
+            "/Users/thariqshihipar/Projects/pubpub-editor/src/addons/Latex/LatexEditable.js",
+            "/Users/thariqshihipar/Projects/pubpub-editor/src/addons/Latex/LatexStatic.js",
+            "/Users/thariqshihipar/Projects/pubpub-editor/src/index.js",
+            "/Users/thariqshihipar/Projects/pubpub-editor/src/schema/ReactViewWrapper.js",
+            "/Users/thariqshihipar/Projects/pubpub-editor/src/schema/baseSchema.js",
+            "/Users/thariqshihipar/Projects/pubpub-editor/src/schema/index.js",
+            "/Users/thariqshihipar/Projects/pubpub-editor/src/schema/reactView.js",
+            "/Users/thariqshihipar/Projects/pubpub-editor/src/schema/setup/clipboard.js",
+            "/Users/thariqshihipar/Projects/pubpub-editor/src/schema/setup/index.js",
+            "/Users/thariqshihipar/Projects/pubpub-editor/src/schema/setup/keymap.js",
+            "/Users/thariqshihipar/Projects/pubpub-editor/src/schema/setup/selectPlugin.js"
+        ],
+        "___id": "T000002R002311",
+        "___s": true
+    }
+]

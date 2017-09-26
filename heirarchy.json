@@ -1,0 +1,79 @@
+{
+    "module": {
+        "heading": "Modules",
+        "doclets": [
+            {
+                "comment": "/**\n * @module Components\n */",
+                "meta": {
+                    "filename": "Editor.js",
+                    "lineno": 60,
+                    "columnno": 0,
+                    "path": "/Users/thariqshihipar/Projects/pubpub-editor/src",
+                    "code": {}
+                },
+                "kind": "module",
+                "name": "Components",
+                "longname": "module:Components",
+                "___id": "T000002R000064",
+                "___s": true,
+                "doclets": [
+                    {
+                        "meta": {
+                            "range": [
+                                3139,
+                                11999
+                            ],
+                            "filename": "Editor.js",
+                            "lineno": 76,
+                            "columnno": 4,
+                            "path": "/Users/thariqshihipar/Projects/pubpub-editor/src",
+                            "code": {
+                                "id": "astnode100000346",
+                                "name": "Editor",
+                                "type": "CallExpression",
+                                "value": ""
+                            }
+                        },
+                        "params": [],
+                        "longname": "module:Components~Editor",
+                        "examples": [
+                            "return <Button>Button text</Button>"
+                        ],
+                        "name": "Editor",
+                        "doclets": [],
+                        "memberof": "module:Components",
+                        "properties": [
+                            {
+                                "type": {
+                                    "names": [
+                                        "object"
+                                    ]
+                                },
+                                "description": "An prop",
+                                "name": "shout"
+                            },
+                            {
+                                "type": {
+                                    "names": [
+                                        "Array.<string>"
+                                    ]
+                                },
+                                "optional": true,
+                                "defaultvalue": "[]",
+                                "description": "An array of names of people to yell at",
+                                "name": "yellees"
+                            }
+                        ],
+                        "scope": "inner",
+                        "kind": "component",
+                        "___s": true,
+                        "___id": "T000002R000065",
+                        "description": "`Editor` is a simple component that displays a button.\nIt does not keep state.",
+                        "parentKind": "module",
+                        "comment": "/**\n * @component\n *\n * `Editor` is a simple component that displays a button.\n * It does not keep state.\n *\n * @example\n * return <Button>Button text</Button>\n * @prop {object} shout An prop\n * @prop {Array<string>} [yellees = []] An array of names of people to yell at\n */"
+                    }
+                ]
+            }
+        ]
+    }
+}
