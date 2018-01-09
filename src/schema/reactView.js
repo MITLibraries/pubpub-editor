@@ -13,6 +13,7 @@ class ReactView {
 		this.forceSelection = this.forceSelection.bind(this);
 		this.stopEvent = this.stopEvent.bind(this);
 		this.ignoreMutation = this.ignoreMutation.bind(this);
+		this.deselectNode = this.deselectNode.bind(this);
 
 		const nodeSpec = node.type.spec;
 		this.decorations = decorations;
@@ -62,6 +63,7 @@ class ReactView {
 				renderComponent={this.renderComponent}
 				getPos={this.getPos}
 				isReadOnly={this.isReadOnly}
+				deselectNode={this.deselectNode}
 			/>,
 			domChild
 		);

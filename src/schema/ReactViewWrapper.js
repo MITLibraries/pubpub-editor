@@ -11,6 +11,7 @@ const propTypes = {
 	changeNode: PropTypes.func.isRequired,
 	getPos: PropTypes.func.isRequired,
 	renderComponent: PropTypes.func.isRequired,
+	deselectNode: PropTypes.func.isRequired,
 };
 
 class ReactViewWrapper extends Component {
@@ -50,6 +51,7 @@ class ReactViewWrapper extends Component {
 			changeNode: this.props.changeNode,
 			updateContent: this.props.updateContent,
 			getPos: this.props.getPos,
+			deselectNode: this.props.deselectNode,
 		};
 		return (
 			<span

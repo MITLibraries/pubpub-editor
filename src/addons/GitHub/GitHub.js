@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import PropTypes from 'prop-types';
 import GitHubEditable from './GitHubEditable';
 import GitHubStatic from './GitHubStatic';
 
@@ -25,20 +24,7 @@ class GitHub extends Component {
 				github: {
 					atom: true,
 					attrs: {
-						url: { default: '' }
-					},
-					parseDOM: [{
-						tag: 'github',
-						getAttrs: (node)=> {
-							return {
-								url: node.getAttribute('data-url') || ''
-							};
-						}
-					}],
-					toDOM: (node)=> {
-						return ['github', {
-							'data-url': node.attrs.url
-						}];
+						repo: { default: null }
 					},
 					inline: false,
 					group: 'block',
@@ -56,7 +42,7 @@ class GitHub extends Component {
 					toEditable(node, view, decorations, isSelected, helperFunctions) {
 						return (
 							<GitHubEditable
-								url={node.attrs.url}
+								repo={node.attrs.repo}
 								isSelected={isSelected}
 								{...helperFunctions}
 							/>
